@@ -47,8 +47,78 @@ const home = {
     label: 'Главная',
     title: 'Алексей Шелихов | Веб-разработчик, персональная страница',
     description: 'Занимаюсь разработкой сайтов и веб-приложений. Разрабатываю собственные продукты и веду удаленно несколько компаний. Также преподаю в ВВГУ.',
-    headline: <>Разработчик, предприниматель и преподователь</>,
-    subline: <>Веб-разработчик, руководитель разработки в студиях FEIDA, slim.technology и chocomilk.ru и преподователь ВВГУ.</>
+    headline: <>Разрабатываю на <span className="accent-on-background-strong">node.js</span>, <span>php</span>, <span>react.js</span>, <span>1C-Битрикс</span> уже более 14 лет</>,
+    subline: <>Веб-разработчик, руководитель разработки в студиях FEIDA, slim.technology и chocomilk.ru и преподователь ВВГУ.</>,
+    partners: [
+        {
+            src: '/images/partners/tefi.png',
+            alt: 'ТЭФИ'
+        },
+        {
+            src: '/images/partners/abro.svg',
+            alt: 'ABRO'
+        },
+        {
+            src: '/images/partners/transgas.svg',
+            alt: 'Трансгаз'
+        },
+        {
+            src: '/images/partners/ame.png',
+            alt: 'AME'
+        },
+        {
+            src: '/images/partners/dolshik.svg',
+            alt: 'ДОльщик Онлайн'
+        },
+        {
+            src: '/images/partners/alfacar.svg',
+            alt: 'Альфа-кар'
+        },
+        {
+            src: '/images/partners/chilima.svg',
+            alt: 'chilima'
+        },
+        {
+            src: '/images/partners/ikra.svg',
+            alt: 'ikra'
+        },
+        {
+            src: '/images/partners/ista.png',
+            alt: 'ISTA'
+        },
+        {
+            src: '/images/partners/karousel.svg',
+            alt: 'Карусель'
+        },
+        {
+            src: '/images/partners/keep.svg',
+            alt: 'KEEP'
+        },
+        {
+            src: '/images/partners/prcvlad.svg',
+            alt: 'PRIORITY'
+        },
+        {
+            src: '/images/partners/sanas.svg',
+            alt: 'SANAS'
+        },
+        {
+            src: '/images/partners/villagepark.svg',
+            alt: 'villagepark'
+        },
+        {
+            src: '/images/partners/xone.png',
+            alt: 'KEEP'
+        },
+        {
+            src: '/images/partners/zatolux.svg',
+            alt: 'KEEP'
+        },
+        {
+            src: '/images/partners/zoodom.svg',
+            alt: 'KEEP'
+        }
+    ]
 }
 
 const about = {

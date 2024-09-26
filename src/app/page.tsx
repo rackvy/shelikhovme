@@ -1,11 +1,13 @@
 import React from 'react';
 
-import { Heading, Flex, Text, Button,  Avatar, RevealFx } from '@/once-ui/components';
+import { Heading, Flex, Text, Button,  Avatar, RevealFx, Scroller, Tag, SmartImage } from '@/once-ui/components';
 import { Projects } from '@/app/work/components/Projects';
 
 import { about, baseURL, home, newsletter, person, routes } from '@/app/resources'
 import { Mailchimp } from '@/app/components';
 import { Posts } from '@/app/blog/components/Posts';
+
+import styles from '@/app/home.module.scss';
 
 export function generateMetadata() {
 	const title = home.title;
@@ -75,7 +77,7 @@ export default function Home() {
 							<Heading
 								wrap="balance"
 								variant="display-strong-l">
-								{home.headline}
+								Разрабатываю на <span className={styles.colorIndigo}>node.js</span>, <span className={styles.colorIndigo}>php</span>, <span className={styles.colorIndigo}>react.js</span>, <span className={styles.colorIndigo}>1C-Битрикс</span> уже более 14 лет
 							</Heading>
 						</RevealFx>
 						<RevealFx translateY="8" delay={0.2}>
@@ -107,8 +109,28 @@ export default function Home() {
 							</Button>
 						</RevealFx>
 					</Flex>
-				
+
 			</Flex>
+			<Scroller direction="row">
+				<Flex
+					maxWidth={500}
+					maxHeight={250}
+					fillWidth
+					direction="row"
+					gap="40"
+				>
+					{home.partners.map((partner, index) => (
+						<SmartImage
+							src={partner.src}
+							alt={partner.alt}
+							aspectRatio="16/9"
+							radius="full"
+							objectFit="contain"
+							className={styles.partnerItem}
+						/>
+					))}
+				</Flex>
+				</Scroller>
 			<RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1,1]}/>
 			</RevealFx>
